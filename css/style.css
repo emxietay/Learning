@@ -112,3 +112,6 @@ section h1 {
   text-align: center;
   border: none;
 }
+section article {
+  border: none;
+}
