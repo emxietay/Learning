@@ -114,4 +114,5 @@ section h1 {
 }
 section article {
   border: none;
+  background-color: rgba(245, 245, 220, 0.015);
 }
