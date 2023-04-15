@@ -96,7 +96,7 @@ section ol {
   padding: 0;
 }
 section * {
-  background-color: rgba(215, 206, 206, 0.394);
+  background-color: rgba(215, 206, 206, 0.396);
   
 }
 section ol p {
@@ -111,4 +111,8 @@ section h1 {
   text-transform: uppercase;
   text-align: center;
   border: none;
+}
+section article {
+  border: none;
+  background-color: rgba(245, 245, 220, 0.015);
 }
