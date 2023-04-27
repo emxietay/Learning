@@ -94,6 +94,8 @@ section ol li {
 }
 section ol {
   padding: 0;
+  height: 70vh;
+  overflow: scroll;
 }
 section * {
   background-color: rgba(215, 206, 206, 0.396);
