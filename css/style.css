@@ -1,9 +1,9 @@
 * {
   font-size: large;
   font-weight: bold;
-  border: 1px inset saddlebrown;
+  /* border: 1px inset saddlebrown; */
   background-color:rgba(245, 245, 220, 0.333);
-  transition: 3s;
+  transition: 0.3s;
 }
 a {
   /* float: left; */
@@ -13,29 +13,7 @@ a {
 html {
   background-color: rgba(0, 0, 0, 0.246);
 }
-nav   {
-  display: flex;
-  justify-content: stretch;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
-  /* flex-direction: column; */
-  /* width: 50%; */
-  margin: 0 auto;
-  /* position: relative; */
-  /* height: 60px; */
-  
-}
-nav a {
-  padding: 10px;
-  transition: s;
-  display: inline-flex;
-  align-items: center; 
-}
-nav a:last-child {
-  padding: 0px;
-   
-}
+
 nav a:last-child:hover {
    border: 3px solid salmon;
 }
