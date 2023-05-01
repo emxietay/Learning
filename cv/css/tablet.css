@@ -1,0 +1,47 @@
+@media screen and (min-width: 768px) and (max-width: 992px){
+  .line {
+   display: none;
+  }
+img.avatar-img {
+  display: none;
+}
+
+.banner-name {
+  
+  font-size: 3.6rem;
+  top: 40%;
+  left: 50%;
+  
+}
+
+#nav-bar div {
+  display: none ;
+}
+  .certificate-details {
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    font-size: 1rem;
+  }
+  #project h3  {
+    font-size: 1.6rem;
+  }
+  #project  {
+    font-size: 1.4rem;
+  }
+  .project-role {
+    display: grid;
+    align-items: center;
+    justify-content:end;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 15px;
+    
+  
+  }
+  .project-role span:last-of-type {
+   /* font-size: 5rem !important; */
+   grid-column: 2;
+  }
+ 
+}

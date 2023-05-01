@@ -1,0 +1,416 @@
+/** @format */
+
+* {
+  margin: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* line-height: 1.5; */
+  color: rgba(0, 0, 0, 0.7);
+}
+html {
+  font-size: 62.5%;  
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+section>.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: block;
+  padding: 30px 50px;
+  
+}
+
+#nav-bar {
+  text-align: center;
+}
+
+.banner-name {
+  position: absolute;
+  font-size: 4.8rem;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  opacity: 60%;
+}
+
+#banner img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(50%);
+  border: none;
+}
+
+#banner {
+  position: relative;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+span.banner {
+  opacity: 60%;
+}
+
+#nav-bar .container {
+  padding: 0 0;
+  font-size: 1.6rem;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+#nav-bar div {
+  display: inline-block;
+  padding: 0 60px;
+  margin: 0px auto;
+  vertical-align: middle;
+}
+
+#nav-bar a {
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-left: #eee solid 1px;
+  color: rgba(0, 0, 0, 0.7);
+  ;
+}
+
+.avatar-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid white;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+
+
+.section-title {
+  margin-bottom: 3.2rem;
+}
+
+#about .container {
+
+  font-size: 1.6rem;
+   line-height: 2.8rem;
+} 
+
+
+
+
+#personal-info a {
+  text-decoration: none;
+  color: #199cdb;
+}
+
+#personal-info {
+  background: #f3f3f3;
+
+  margin-top: 0 !important;
+}
+
+ul li span {
+  font-weight: bold;
+}
+
+ul>li {
+  list-style-type: none;
+}
+
+ul {
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.social-network {
+  letter-spacing: 0;
+  font-size: 2.4rem;
+  color: #199cdb;
+}
+
+
+
+
+ #job-info .container h1 {
+  font-weight: 500;
+  justify-self: start;
+  font-size: 2.4rem;
+}
+
+#job-info .container>div>div {
+  border: 1px solid #eee;
+  padding: 3.6rem 1.2rem 4.4rem 2.4rem;
+  /* display: flex;
+  grid-template-columns: 75% 25%;
+  justify-items: start;
+  align-items: start; */
+  
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+#job-info .title i {
+  font-size: 3.6rem;
+  justify-self: start;
+}
+#job-info .title  {
+display: flex;
+justify-content: space-between;
+padding-right: 3.6rem;
+margin-bottom: 3.6rem;
+}
+
+
+
+#job-info .bluetext {
+  border-radius: 10px;
+  background: #199cdb;
+  padding: 0px 15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerx {
+  position: relative;
+  margin: 3.6rem 0 0 3.6rem;
+}
+
+.containerx::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  width: 0.6em;
+  height: 0.6em;
+  background-color: #199cdb;
+  border-radius: 50%;
+  left: -30px;
+  top: 5px;
+}
+
+.favorite {
+  padding: 0;
+  margin: 0;
+
+}
+
+.favorite>div {
+  display: flex;
+  /* justify-content: center; */
+  align-items: flex-start;
+  grid-column: span 2;
+  gap: 0px;
+  
+  justify-content: space-evenly;
+  padding-left: 0;
+}
+
+ .favorite>div>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+} 
+
+.favorite>div:last-child i {
+  font-size: 1.6rem;
+  color: #199cdb;
+
+}
+
+.circle {
+  height: 3.6rem;
+  width: 3.6rem;
+  border: 1px solid #199cdb;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  /* display: inline-block; */
+}
+
+.languages {
+  justify-self: start;
+  margin-left: 3em;
+}
+
+/* Make level bar  */
+.level-off {
+  background-color: #eee;
+  border-radius: 5px;
+  width: 45px;
+  height: 2px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.level-on {
+  background-color: #199cdb;
+  border-radius: 5px;
+  width: 45px;
+  height: 2px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+
+#certificate img {
+  width: 100%;
+  /* height: 100%; */
+}
+
+.splitter {
+
+  border-right: #d6c08d 1px solid;
+}
+
+.certificate-details {
+  padding: 0 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  column-gap: 20px;
+  font-size: 8px;
+}
+
+.certificate-details h3 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+/* #certificate .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  row-gap: 40px;
+
+  padding: 20px 20%;
+} */
+
+/* #certificate .section-title,
+.line {
+  grid-column: 1 / -1;
+  margin-top: 30px;
+  margin-bottom: 0;
+} */
+
+.line {
+  border-bottom: #d6c08d solid 1px;
+}
+
+#project img {
+  width: 100%;
+}
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+  padding: 1px;
+  /* background-color: #eee; */
+  /* gap: 1px; */
+  /* border: #eee 1px solid; */
+}
+
+#project .bluetext {
+  border-radius: 20px;
+  background: #199cdb;
+  padding: 5px 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-details>div {
+  border-top: #eee 1px solid;
+  border-left: #eee 1px solid;
+  border-right: #eee 1px solid;
+  padding: 20px;
+
+}
+
+.project-role {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 2fr 3fr;
+  column-gap: 15px;
+  justify-content: center;
+
+}
+
+.project-role i {
+  font-size: 1em;
+}
+
+
+
+#project .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 30px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+
+#project .container h1 {
+  grid-column: span 3;
+  
+}
+#project .container h3 {
+font-size: 1.6rem;  
+}
+
+td {
+  border-bottom: #eee 1px solid;
+  vertical-align: top;
+  padding: 10px;
+}
+
+td:first-child {
+  width: 30%;
+}
+
+table {
+  border: #eee 1px solid;
+  border-collapse: collapse;
+  /* font-size: 1.6rem; */
+}
+
+#footer li {
+  color: #199cdb;
+  display: inline-flex;
+  align-items: center;
+  margin: 20px;
+}
+
+#footer i {
+  font-size: 35px;
+  color: #199cdb;
+}
+
+#footer a {
+  text-decoration: none;
+  color: black;
+  align-items: center;
+}
+
+#footer a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+
+}
+
+#footer .container {
+  text-align: center;
+}
+
+
+
+
+
