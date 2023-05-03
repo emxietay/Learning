@@ -1,0 +1,68 @@
+@media screen and (min-width:900px) {
+  .grid {
+    grid-template-columns: auto 23% 23%;
+    grid-template-rows: auto auto;
+    gap: 30px;
+  }
+
+  .timeline {
+    grid-row: 1 / -1;
+    grid-column: 3 / -1;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+
+}
+
+.project>* {
+  border-bottom: 1px dotted rgba(0, 174, 255, 0.611);
+
+}
+
+.project .icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  border: gray 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 2.8rem !important;
+}
+
+h1 {
+  font-size: 3.6rem !important;
+}
+
+h5 {
+  font-size: 2.4rem !important;
+}
+
+h2 {
+  font-size: 3.2rem !important;
+}
+
+.primary b {
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 50%;
+  border: gray 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #343a40;
+  font-size: 2.8rem;
+}

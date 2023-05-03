@@ -6,6 +6,13 @@ img.avatar-img {
   display: none;
 }
 
+section>.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: block;
+  padding: 10px 20px;
+  
+}
 .banner-name {
   
   font-size: 3.6rem;
@@ -22,7 +29,6 @@ img.avatar-img {
     display: grid;
     grid-template-columns: 1fr;
     align-content: center;
-    font-size: 1rem;
   }
   #project h3  {
     font-size: 1.6rem;

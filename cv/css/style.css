@@ -3,11 +3,11 @@
 * {
   margin: 0px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  /* line-height: 1.5; */
   color: rgba(0, 0, 0, 0.7);
 }
+
 html {
-  font-size: 62.5%;  
+  font-size: 62.5%;
 }
 
 .bg-grey {
@@ -19,7 +19,6 @@ section>.container {
   margin: 0 auto;
   display: block;
   padding: 30px 50px;
-  
 }
 
 #nav-bar {
@@ -28,7 +27,7 @@ section>.container {
 
 .banner-name {
   position: absolute;
-  font-size: 4.8rem;
+  font-size: 3.6rem;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -88,17 +87,14 @@ span.banner {
   z-index: 1;
 }
 
-
-
 .section-title {
   margin-bottom: 3.2rem;
 }
 
 #about .container {
-
   font-size: 1.6rem;
-   line-height: 2.8rem;
-} 
+  line-height: 2.8rem;
+}
 
 
 
@@ -110,7 +106,6 @@ span.banner {
 
 #personal-info {
   background: #f3f3f3;
-
   margin-top: 0 !important;
 }
 
@@ -133,39 +128,70 @@ ul {
   color: #199cdb;
 }
 
-
-
-
- #job-info .container h1 {
+#job-info .container h1,
+h3 {
   font-weight: 500;
   justify-self: start;
   font-size: 2.4rem;
 }
 
+#job-info .hidden {
+  display: none;
+}
+
+.container h3 {
+  font-weight: 500;
+  justify-self: start;
+}
+
 #job-info .container>div>div {
   border: 1px solid #eee;
   padding: 3.6rem 1.2rem 4.4rem 2.4rem;
-  /* display: flex;
-  grid-template-columns: 75% 25%;
-  justify-items: start;
-  align-items: start; */
-  
-  font-size: 1.2rem;
+
+  font-size: 1.4rem;
   line-height: 1.6rem;
 }
 
 #job-info .title i {
-  font-size: 3.6rem;
+  font-size: 2.8rem;
   justify-self: start;
 }
-#job-info .title  {
-display: flex;
-justify-content: space-between;
-padding-right: 3.6rem;
-margin-bottom: 3.6rem;
+
+#job-info .title {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 2.4rem;
+  margin-bottom: 3.6rem;
 }
 
+/* Position of view-more and view-less */
+#job-info>div>div>div {
+  position: relative;
+}
 
+#job-info .hidden:last-of-type {
+  position: relative;
+}
+
+.view-more {
+  position: absolute;
+  top: 7rem;
+
+}
+
+.view-less {
+  position: absolute;
+  top: 7rem;
+
+}
+
+.btn {
+  width: 10rem;
+}
+
+.show {
+  display: block;
+}
 
 #job-info .bluetext {
   border-radius: 10px;
@@ -174,6 +200,7 @@ margin-bottom: 3.6rem;
   display: inline-flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .containerx {
@@ -199,23 +226,31 @@ margin-bottom: 3.6rem;
 
 }
 
+.favorite-details>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 .favorite>div {
   display: flex;
-  /* justify-content: center; */
   align-items: flex-start;
   grid-column: span 2;
   gap: 0px;
-  
+
   justify-content: space-evenly;
   padding-left: 0;
 }
 
- .favorite>div>div {
+.favorite>div>div {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
-  
-} 
+  gap: 1rem;
+  justify-content: center;
+
+}
 
 .favorite>div:last-child i {
   font-size: 1.6rem;
@@ -261,7 +296,6 @@ margin-bottom: 3.6rem;
 
 #certificate img {
   width: 100%;
-  /* height: 100%; */
 }
 
 .splitter {
@@ -275,30 +309,15 @@ margin-bottom: 3.6rem;
   grid-template-columns: 1fr 1fr;
   align-content: center;
   column-gap: 20px;
-  font-size: 8px;
+  font-size: 1.6rem;
 }
 
 .certificate-details h3 {
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 1.2rem;
 }
 
-/* #certificate .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  row-gap: 40px;
 
-  padding: 20px 20%;
-} */
-
-/* #certificate .section-title,
-.line {
-  grid-column: 1 / -1;
-  margin-top: 30px;
-  margin-bottom: 0;
-} */
 
 .line {
   border-bottom: #d6c08d solid 1px;
@@ -312,9 +331,6 @@ margin-bottom: 3.6rem;
   display: flex;
   flex-direction: column;
   padding: 1px;
-  /* background-color: #eee; */
-  /* gap: 1px; */
-  /* border: #eee 1px solid; */
 }
 
 #project .bluetext {
@@ -360,10 +376,11 @@ margin-bottom: 3.6rem;
 
 #project .container h1 {
   grid-column: span 3;
-  
+
 }
+
 #project .container h3 {
-font-size: 1.6rem;  
+  font-size: 1.6rem;
 }
 
 td {
@@ -379,13 +396,14 @@ td:first-child {
 table {
   border: #eee 1px solid;
   border-collapse: collapse;
-  /* font-size: 1.6rem; */
+  font-size: 1.6rem;
 }
 
 #footer li {
   color: #199cdb;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   margin: 20px;
 }
 
@@ -409,8 +427,3 @@ table {
 #footer .container {
   text-align: center;
 }
-
-
-
-
-

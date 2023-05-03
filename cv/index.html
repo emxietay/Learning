@@ -30,14 +30,14 @@
 
 		<section id="nav-bar">
 			<nav class="container">
-				<a href="#personal-info"><i class="icon-user" style="color:#199cdb;"></i>Thông tin</a>
-				<a href="#job-info"><i class="icon-doc-text-inv" style="color:#199cdb;"></i>Lý lịch</a>
+				<a href="#personal-info" target="_blank"><i class="icon-user" style="color:#199cdb;"></i>Thông tin</a>
+				<a href="#job-info" target="_blank"><i class="icon-doc-text-inv" style="color:#199cdb;"></i>Lý lịch</a>
 				<div class="banner">
 					<h1 class="banner">Nguyễn Mạnh Nam</h1>
 					<span class="banner">Full Stack Developer</span>
 				</div>
-				<a href="#certificate"><i class="icon-mail-alt" style="color:#199cdb;"></i>Chứng chỉ</a>
-				<a href="#project"><i class="icon-star-1" style="color:#199cdb;"></i>Dự Án</a>
+				<a href="#certificate" target="_blank"><i class="icon-mail-alt" style="color:#199cdb;"></i>Chứng chỉ</a>
+				<a href="#project" target="_blank"><i class="icon-star-1" style="color:#199cdb;"></i>Dự Án</a>
 
 				<img src="images/avatar1x1.jpg" alt="" class="avatar-img">
 
@@ -56,7 +56,7 @@
 						học hỏi để phát triển bản thân, cũng như hoàn thành tốt nhất công việc được giao.
 					</p>
 				</div>
-				<div id="personal-info" class="col-md-6 " style="margin-top: 20px" >
+				<div id="personal-info" class="col-md-6 display" style="margin-top: 20px; display: none" >
 					<h1 class="section-title">Thông tin cá nhân</h1>
 					<ul class="mt-40 info ps-4">
 						<li><span>Giới tính</span> : Nam</li>
@@ -73,6 +73,18 @@
 						<a href="https://www.linkedin.com/in/nguyenmanhnam/"><i class="icon-linkedin"></i></a>
 
 					</div>
+					
+				</div>
+				<div class="validate p-5" id="validate">
+					<form>
+						<h1>Thông tin cá nhân</h1> <br>
+						<input type="email" id="email" name="email" placeholder="Enter email"> <br>
+						<label for="email" class="text-secondary small">Hãy nhập email để xác thực</label> <br>
+						<button type="submit" class="btn btn-lg btn-primary">Submit</button>
+					</form>
+					
+					
+					
 				</div>
 			</div>
 			</div>
@@ -80,14 +92,20 @@
 
 		<section id="job-info">
 			<div class="container p-3">
-				<div class="row row-cols-1 column-gap-1 justify-content-center column-gap-5 row-cols-md-2 row-cols-lg-3 ">
+				<div class="row row-cols-1 justify-content-center column-gap-5 row-cols-md-2 row-cols-lg-3 ">
 					
 				<div class="experience col-11 col-md-5 col-lg-3" style="margin-top: 20px">
 					<div class="title">
 					<h1>Kinh nghiệm</h1>
 					<i class="ic-toolbox"></i>
 				</div>
-					<div>
+				<div class="view-more hidden"> 
+					<button class="btn btn-warning viewMore"><i class="icon-down-1"></i> VIEW MORE</button>
+				</div>
+				<div class="view-less hidden"> 
+					<button class="btn btn-warning viewLess"> <i class="icon-up-1"></i> VIEW LESS</button>
+				</div>
+					<div class="hidden">
 						<div class="containerx">
 							<h3>Full Stack Developer - Công ty Y</h3>
 							<em>05/2022 - <span class="bluetext">Hiện tại</span></em>
@@ -113,7 +131,13 @@
 					<h1 >Học vấn</h1>
 					<i class="ic-pencil"></i>
 				</div>
-					<div>
+				<div class="view-more hidden"> 
+					<button class="btn btn-warning viewMore"><i class="icon-down-1"></i> VIEW MORE</button>
+				</div>
+				<div class="view-less hidden"> 
+					<button class="btn btn-warning viewLess"> <i class="icon-up-1"></i> VIEW LESS</button>
+				</div>
+					<div class="hidden">
 						<div class="containerx ">
 							<h3>FUNiX</h3>
 							<em>03/2023 - 09/2023</em>
@@ -134,6 +158,13 @@
 					<h1 >Hoạt động</h1>
 					<i class="ic-toolbox "></i>
 				</div>
+				<div class="view-more hidden"> 
+					<button class="btn btn-warning viewMore"><i class="icon-down-1"></i> VIEW MORE</button>
+				</div>
+				<div class="view-less hidden"> 
+					<button class="btn btn-warning viewLess"> <i class="icon-up-1"></i> VIEW LESS</button>
+				</div>
+				<div class="hidden">
 						<div class="containerx">
 							<h3>Vietnam Netrider competition 2012</h3>
 							<p><em>01/2012</em></p>
@@ -146,6 +177,7 @@
 							<p><em>01/2011</em></p>
 							<p>- 3rd Prize</p>
 						</div>
+					</div>
 				</div>
 
 				<div class="favorite col-11 col-md-5 col-lg-3" style="margin-top: 20px">
@@ -153,7 +185,13 @@
 					<h1>Sở thích</h1>
 					<i class="ic-telescope"></i>
 				</div>
-
+				<div class="view-more hidden"> 
+					<button class="btn btn-warning viewMore"><i class="icon-down-1"></i> VIEW MORE</button>
+				</div>
+				<div class="view-less hidden"> 
+					<button class="btn btn-warning viewLess"> <i class="icon-up-1"></i> VIEW LESS</button>
+				</div>
+					<div class="hidden">
 					<div class="favorite-details">
 
 						<div>
@@ -169,13 +207,20 @@
 							<span class="circle"><i class="ic-basket"></i></span><br>Nấu ăn
 						</div>
 					</div>
+					</div>
 				</div>
 				<div class="language col-11 col-md-5 col-lg-3" style="margin-top: 20px">
 					<div class="title">
 					<h1>Ngôn ngữ</h1>
 					<i class="ic-mic"></i>
 				</div>
-
+				<div class="view-more hidden"> 
+					<button class="btn btn-warning viewMore"><i class="icon-down-1"></i> VIEW MORE</button>
+				</div>
+				<div class="view-less hidden"> 
+					<button class="btn btn-warning viewLess"> <i class="icon-up-1"></i> VIEW LESS</button>
+				</div>
+<div class="hidden">
 					<div class="languages">
 						<div>Tiếng Anh - Ielts 7.0</div>
 						<span class="level-on"></span>
@@ -187,12 +232,19 @@
 
 					</div>
 				</div>
+				</div>
 				<div class="skills col-11 col-md-5 col-lg-3" style="margin-top: 20px">
 					<div class="title">
 					<h1>Kỹ năng</h1>
 					<i class="ic-tools-2"></i>
 				</div>
-
+				<div class="view-more hidden"> 
+					<button class="btn btn-warning viewMore"><i class="icon-down-1"></i> VIEW MORE</button>
+				</div>
+				<div class="view-less hidden"> 
+					<button class="btn btn-warning viewLess"> <i class="icon-up-1"></i> VIEW LESS</button>
+				</div>
+<div class="hidden">
 					<div class="skills-details">
 
 
@@ -214,6 +266,7 @@
 						<span class="level-off"></span><br> <br> <br> <br>
 					</div>
 				</div>
+			</div>
 				</div>
 
 
@@ -227,7 +280,7 @@
 					Chứng chỉ - Giải thưởng
 				</h1>
 				<div class="row row-cols-md-2  row-gap-5 justify-content-center">
-				<div class=" certificate-details col-md-5  splitter">
+				<div class=" certificate-details   splitter">
 					<div>						
 						<img src="./images/Cert_WEB.png"  alt="">
 					</div>
@@ -238,7 +291,7 @@
 						<p> - GPA: 8.6 </p>
 					</div>
 				</div>
-				<div class="certificate-details col-md-5">
+				<div class="certificate-details ">
 					<div >
 						<img src="./images/Cert_WEB.png" alt="">						
 					</div>
@@ -251,7 +304,7 @@
 				</div>
 
 				<div class="line col-md-10"></div>
-				<div class="certificate-details col-md-5 splitter">
+				<div class="certificate-details splitter">
 					<img src="./images/Cert_CCNA.png" alt="">
 					<div>
 						<h3>Chứng chỉ CCNA - Cisco </h3>
@@ -260,7 +313,7 @@
 						<p> - GPA: 8.0 </p>
 					</div>
 				</div>
-				<div class="certificate-details col-md-5 ">
+				<div class="certificate-details  ">
 					<img src="./images/cert_MCITP.jpg" alt="">
 					<div>
 						<h3>Chứng chỉ MCITP - Microsoft </h3>
@@ -270,7 +323,7 @@
 					</div>
 				</div>
 				<div class="line col-md-10"></div>
-				<div class="certificate-details col-md-5 splitter">
+				<div class="certificate-details  splitter">
 					<img src="./images/cert_MCSA.jpg" alt="">
 					<div>
 						<h3>Chứng chỉ MCSA - Microsoft </h3>
@@ -279,7 +332,7 @@
 						<p> - GPA: 8.0 </p>
 					</div>
 				</div>
-				<div class="certificate-details col-md-5 ">
+				<div class="certificate-details  ">
 					<img src="./images/cert_MCTSAD.jpg" alt="">
 					<div>
 						<h3>Chứng chỉ MCTS - Microsoft </h3>
@@ -303,7 +356,10 @@
 				<div class="project-details">
 					<img class="project-img" src="./images/project_1.png" alt="">
 					<div class="project-name">
-						<h3>CV CÁ NHÂN</h3>
+						<a href="./projects/project1.html" target="_blank" class="project link-secondary link-underline-opacity-25">
+							
+							<h3>CV CÁ NHÂN</h3>
+						</a>
 					</div>
 					<div class="project-role span">
 						<span class="bluetext"> 2021</span>
@@ -335,7 +391,10 @@
 				<div class="project-details">
 					<img class="project-img" src="./images/project_2.png" alt="">
 					<div class="project-name">
-						<h3>TRANG WEB QUẢN LÝ THÚ CƯNG</h3>
+						<a href="./projects/project1.html" target="_blank" class="project link-secondary link-underline-opacity-25">
+							
+							<h3>TRANG WEB QUẢN LÝ THÚ CƯNG</h3>
+						</a>
 					</div>
 					<div class="project-role span">
 						<span class="bluetext"> 2021</span>
@@ -367,7 +426,10 @@
 				<div class="project-details">
 					<img class="project-img" src="./images/project_3.png" alt="">
 					<div class="project-name">
-						<h3>TRANG WEB XEM TIN TỨC</h3>
+						<a href="./projects/project1.html" target="_blank" class="project link-secondary link-underline-opacity-25">
+							
+							<h3>TRANG WEB XEM TIN TỨC</h3>
+						</a>
 					</div>
 					<div class="project-role span">
 						<span class="bluetext"> 2021</span>
@@ -401,7 +463,7 @@
 
 		<section id="footer" class="bg-grey">
 			<div class="container">
-				<ul>
+				<ul class="row-cols-1  row-cols-md-4 justify-content-center align-items-center">
 					<li> <i class="icon-facebook-circled"></i><a
 							href="https://www.facebook.com/profile.php?id=100008024192871">Facebook</a></li>
 					<li> <i class="icon-linkedin-circled"></i><a href="https://www.linkedin.com/in/nguyenmanhnam/">LinkedIn</a>
@@ -411,6 +473,10 @@
 				</ul>
 
 		</section>
+		
+		
+		<script src="script.js"></script>
+
 	</body>
 
 </html>
